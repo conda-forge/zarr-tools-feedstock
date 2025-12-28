@@ -1,13 +1,13 @@
 {% set name = "zarr-tools" %}
-{% set version = "0.4.5" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/zarr-tools-{{ version }}.tar.gz
-  sha256: fb445815036f4992074492019f728949286995b6cb4a52906989aa70f23e1329
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 4ddb1794f40b3ca018c611e3fa01f3b6ea83c9c2f0aaee90cc7e89d6186d00d5
 
 build:
   noarch: python
